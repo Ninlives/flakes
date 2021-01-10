@@ -16,6 +16,8 @@ github:Ninlives/flakes
         ├───ibus-rime: package 'ibus-rime-2020-09-29'
         ├───intel-undervolt: package 'intel-undervolt'
         ├───netease-cloud-music: package 'netease-cloud-music-1.2.0'
+        ├───opendrop: package 'opendrop-0.12.3'
+        ├───owl: package 'owl'
         ├───pam-device: package 'pam-device'
         ├───pam-python: package 'pam-python-1.0.7'
         ├───pixel-saver: package 'pixel-saver'
@@ -23,5 +25,5 @@ github:Ninlives/flakes
         ├───shadowsocksr: package 'shadowsocks'
         ├───steal-my-focus: package 'steal-my-focus'
         ├───tray-icons: package 'dynamic-panel-transparent'
-        └───wine-wechat: package 'wine-wechat'
+        └───wine-wechat: package 'wechat'
 ```
