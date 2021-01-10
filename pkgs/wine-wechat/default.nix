@@ -49,7 +49,7 @@ let
       makeBindOption "--bind" extraMountPoints
     })";
 
-in runCommand "wine-wechat" {
+in runCommand "wechat" {
   inherit bubblewrap script mountPoints fakeHome;
   inherit (stdenv) shell;
   buildInputs = [ makeWrapper ];
