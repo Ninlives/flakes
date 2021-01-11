@@ -1,8 +1,16 @@
-{ pkgs, stdenv, runCommand, makeWrapper, fetchgit, nodejs }:
+{ pkgs, lib, applyPatches, stdenv, runCommand, makeWrapper, fetchFromGitHub
+, nodejs, hostInLocalNet ? true, infiniteAnimation ? true }:
 let
-  source = fetchgit {
-    url = "https://github.com/RobinLinus/snapdrop.git";
-    sha256 = "sha256-oMO6X6ICh3urSFpgpgS4x5olM+RHGqPyyiC0hHnDJuY=";
+  source = applyPatches {
+    src = fetchFromGitHub {
+      owner = "RobinLinus";
+      repo = "snapdrop";
+      rev = "07244871328f7b90593086de642f94df91e4a0d8";
+      sha256 = "sha256-oMO6X6ICh3urSFpgpgS4x5olM+RHGqPyyiC0hHnDJuY=";
+    };
+    patches = with lib;
+      optional hostInLocalNet ./one-room.patch
+      ++ optional infiniteAnimation ./infinite-animation.patch;
   };
   server = (import ./server.nix { inherit pkgs source; }).package;
 in runCommand "snapdrop" { nativeBuildInputs = [ makeWrapper ]; } ''
