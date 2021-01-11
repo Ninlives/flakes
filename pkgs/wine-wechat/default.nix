@@ -1,7 +1,7 @@
 { stdenv, lib, wine, winetricks, fetchpatch, fetchurl, gnutar, zstd, python3
 , makeWrapper, srcOnly, substituteAll, runCommand, bubblewrap
 , extraROMountPoints ? { }, extraMountPoints ? { }
-, fakeHome ? "$HOME" }:
+, fakeHome ? "$HOME/.local/fakefs/wechat" }:
 let
   srcHash = "0x8bs13iqwa7pi91z6kmgm7ybma1rpmxbqd3zp7h3inrm8h7ndph";
   version = "3.0.0.57-2";

@@ -23,6 +23,7 @@ github:Ninlives/flakes
         ├───pixel-saver: package 'pixel-saver'
         ├───pop-gruvbox: package 'gruvarc-gtk-theme'
         ├───shadowsocksr: package 'shadowsocks'
+        ├───snapdrop: package 'snapdrop'
         ├───steal-my-focus: package 'steal-my-focus'
         ├───tray-icons: package 'dynamic-panel-transparent'
         └───wine-wechat: package 'wechat'
