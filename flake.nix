@@ -26,6 +26,7 @@
         });
       in rec {
         packages = getPackages' (n: pkgs.callPackage n { }) dirs;
+        checks = packages;
       }) // {
         overlay = final: prev: getPackages' (n: final.callPackage n { }) dirs;
       };
