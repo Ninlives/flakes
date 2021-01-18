@@ -1,5 +1,5 @@
 # Archived
-Move to https://github.com/Ninlives/flakes.
+Move to https://github.com/nixos-cn/flakes.
 
 # Intro
 
