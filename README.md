@@ -1,3 +1,8 @@
+# Archived
+Move to https://github.com/Ninlives/flakes.
+
+# Intro
+
 A set of programs packages by Ninlives. Only tested on a x86_64-linux machine.
 
 ```
